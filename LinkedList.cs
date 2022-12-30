@@ -18,25 +18,35 @@ namespace LInkedListDemo
             else
             {
                 Node temp = head;
-                while(temp.next!=null)
+                while (temp.next != null)
                 {
                     temp = temp.next;
-                }temp.next = node;
+                }
+                temp.next = node;
             }
         }
         public void display()
         {
             Node temp = this.head;
-            if(temp ==null)
+            if (temp == null)
             {
                 Console.WriteLine("LinkedList is empty");
                 return;
             }
-            while(temp!=null)
+            while (temp != null)
             {
                 Console.WriteLine(temp.data + " ");
                 temp = temp.next;
             }
         }
+
+        public void AddFirst(int data)      
+        {
+            Node newNode = new Node(data);
+            newNode.next = head;
+            head = newNode;
+            Console.WriteLine($"{newNode.data} is added into the list.");
+        }
+
     }
 }
