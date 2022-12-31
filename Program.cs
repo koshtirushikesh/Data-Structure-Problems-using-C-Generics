@@ -4,15 +4,17 @@
     {
         static void Main(string[] args)
         {
-            LinkedList linkedList = new LinkedList();
-
-
-            linkedList.AddFirst(56);          
-            linkedList.AddFirst(30);
-            linkedList.AddFirst(70);
-
-            linkedList.display();
             
+            LinkedList<int> linkdlist = new LinkedList<int>(); 
+
+            linkdlist.AddFirst(56);
+            linkdlist.AddLast(30);
+            linkdlist.AddLast(70);
+            
+            foreach (int i in linkdlist)
+            {
+                Console.WriteLine(i);
+            }
         }
     }
 }
