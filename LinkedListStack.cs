@@ -33,10 +33,28 @@ namespace LInkedListDemo
             Node temp = this.top;
             while(temp != null) 
             {
-                Console.Write(temp.data+ " ");
+                Console.WriteLine(temp.data+ " ");
                 temp = temp.next;
+                
             }
-        
+        }
+
+        internal void peak() 
+        {
+            if (this.top==null)
+            {
+                Console.WriteLine("Stack is empty");
+            }
+            Console.WriteLine("{0} is top of the stack ", this.top.data);
+        }
+
+        internal void pop()
+        {
+            if (this.top == null)
+            {
+                Console.WriteLine("Stack is empty");
+            }
+            this.top = this.top.next;
         }
     }
 }
