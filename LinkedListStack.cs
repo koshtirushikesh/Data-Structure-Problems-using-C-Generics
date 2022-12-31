@@ -59,8 +59,11 @@ namespace LInkedListDemo
 
         internal void IsEmpty()
         {
-            peak();
-            pop();
+            while(this.top != null)
+            {
+                peak();
+                pop();
+            }
         }
     }
 }
