@@ -10,11 +10,7 @@
             linkedListStack.push(56);
             linkedListStack.Display();
 
-            while (true)
-            {
-                linkedListStack.pop();
-                linkedListStack.peak();
-            }
+            linkedListStack.IsEmpty();
 
             linkedListStack.Display();
         }

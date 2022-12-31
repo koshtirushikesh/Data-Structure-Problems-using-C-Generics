@@ -56,5 +56,11 @@ namespace LInkedListDemo
             }
             this.top = this.top.next;
         }
+
+        internal void IsEmpty()
+        {
+            peak();
+            pop();
+        }
     }
 }
